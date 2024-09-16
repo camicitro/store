@@ -22,7 +22,6 @@ public class ProductController {
     }
 
     public void createProduct(){
-
         String productName = getProductNameFromInput();
         Double productPrice = getProductPriceFromInput();
 
@@ -32,7 +31,6 @@ public class ProductController {
         productService.createProduct(newProduct);
 
         System.out.println("Producto creado exitosamente: " + newProduct.toString());
-
     }
 
     public void searchProductsByCategory(){
@@ -107,7 +105,6 @@ public class ProductController {
                 System.out.println("El precio ingresado no es un número válido");
                 scanner.next();
             }
-
         }
         return productPrice;
     }

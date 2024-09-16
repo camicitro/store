@@ -56,7 +56,7 @@ public class SaleServiceImpl implements SaleService{
             Sale newSale = new Sale(saleDate, totalAmount, sellerCommission, saleProductList, seller);
 
             return saleRepository.save(newSale);
-        }catch(Exception e){
+        } catch(Exception e){
             throw new ObjectCreationException("Error al crear la venta: " + e.getMessage());
         }
 

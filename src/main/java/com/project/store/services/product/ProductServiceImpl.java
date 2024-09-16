@@ -59,7 +59,6 @@ public class ProductServiceImpl implements ProductService{
             return products;
         }
         throw new ProductNotFoundException("No se encontraron productos");
-
     }
 
     @Override

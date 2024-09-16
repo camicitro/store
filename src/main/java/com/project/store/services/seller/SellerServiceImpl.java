@@ -59,7 +59,7 @@ public class SellerServiceImpl implements SellerService{
                 throw new DataIntegrityViolationException("Error borrando el vendedor con id " + sellerId);
             }
         }
-        throw new SellerNotFoundException("No existe el producto con el id " + sellerId);
+        throw new SellerNotFoundException("No existe el vendedor con el id " + sellerId);
     }
 
     @Override
