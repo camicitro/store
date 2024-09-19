@@ -12,7 +12,7 @@ import java.util.List;
 public interface SaleRepository extends JpaRepository<Sale, Long> {
 
     @Query(
-            value = "SELECT * FROM products WHERE seller_id LIKE :sellerId",
+            value = "SELECT * FROM sales WHERE seller_id LIKE :sellerId",
             nativeQuery = true
     )
     public List<Sale> findSalesBySeller(@Param("sellerId") Long sellerId);
