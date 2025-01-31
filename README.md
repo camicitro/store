@@ -1,4 +1,4 @@
-# Prueba "Tienda de Productos"
+# Prueba Técnica "Tienda de Productos"
 ## Consigna:
 Se debe implementar la funcionalidad básica de una tienda de productos:
 * Se pueden almacenar productos y vendedores
